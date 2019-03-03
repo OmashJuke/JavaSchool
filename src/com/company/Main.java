@@ -13,6 +13,7 @@ public class Main {
         System.out.println(oleg.marry(kate));
         System.out.println(oleg.GetSpouseName());
         System.out.println(kate.GetSpouseName());
+        System.out.println(july.GetSpouseName());
 
 
     }

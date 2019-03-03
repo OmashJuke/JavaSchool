@@ -13,7 +13,11 @@ public class Person {
         return name;
     }
     public String GetSpouseName(){
-        return spouse.name;
+       if (spouse!=null){
+        return spouse.name;}
+       else {
+           return "no";
+       }
     }
 
 
@@ -24,6 +28,8 @@ public class Person {
             if (isFamily(person)) {
                 return false;
             } else {
+                this.divorce();
+                person.divorce();
                 this.spouse=person;
                 person.spouse=this;
                 return true;
